@@ -1,5 +1,5 @@
 # Project 3: Home DNS Server and Ad Blocker
-## Requirements (v1.0)
+## Requirements (v1.1)
 
 **Author:** <your name>
 **Date:** 2026-11-14
@@ -64,3 +64,9 @@ across many sites.
 - Some devices may use hard-coded DNS servers and skip ours (investigate in design).
 - If all DNS servers fail, the internet will appear "down" to every device even
   though the connection works. NFR-1 exists to prevent this.
+## Change Log
+
+| Version | Date | Change | Reason |
+|---------|------|--------|--------|
+| 1.0 | 2026-11-14 | Initial requirements | — |
+| 1.1 | 2026-11-24 | DHCP for the house moves to the Archer BE400. Added test T8 (no IPv6 bypass) | Xfinity gateway can't hand out custom DNS or disable DHCP (evidence 2026-11-15) |
