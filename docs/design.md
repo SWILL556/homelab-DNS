@@ -1,7 +1,7 @@
 # Project 3: Home DNS Server and Ad Blocker
 ## Design (v1.0)
 
-**Author:** Seldon Williams · **Date:** 2026-11-24 · **Status:** Draft
+**Author:** Seldon Williams · **Date:** 2026-11-24 · **Status:** Approved
 **Related:** requirements.md (v1.1) · ip-plan.md (v1.0) · network-diagram.png (v1.0)
 
 ---
