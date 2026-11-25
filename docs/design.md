@@ -24,8 +24,8 @@ can hand out both Pi-holes as DNS servers. The Xfinity gateway can't.
 | D5 | Pi-holes run as LXC containers on Proxmox; OptiPlex also runs Proxmox (standalone, not clustered) | Lightweight, snapshots before changes, Jellyfin isolated from DNS | VMs; bare-metal; Docker. Clustering rejected (two-node quorum issue) |
 | D6 | House LAN 192.168.10.0/24, IPv6 off on BE400 | See ip-plan.md. IPv6 off closes the Comcast IPv6 DNS bypass | Keeping IPv6 (needs extra work to stop bypass) |
 | D7 | Cisco 3560-CX as the LAN switch, Day 0 baseline only (VLAN 1) | Owned, going in the rack. VLANs deferred to Project 5 | Plug hosts straight into BE400 |
-| D8 🟡 PROPOSED | Upstream DNS: Quad9 (9.9.9.9) primary, Cloudflare (1.1.1.1) secondary | Quad9 also blocks known-malicious domains (supports FR-1); two different providers so one outage doesn't break lookups | Comcast DNS; Google DNS |
-| D9 🟡 PROPOSED | After cutover, turn off the Xfinity gateway's Wi-Fi (or change its password so only admins know it) | Any device on Xfinity Wi-Fi skips Pi-hole, which breaks FR-3. Keeping it during the pilot gives the family a fallback | Leave it on (family devices may bypass Pi-hole) |
+| D8 | Upstream DNS: Quad9 (9.9.9.9) primary, Cloudflare (1.1.1.1) secondary | Quad9 also blocks known-malicious domains (supports FR-1); two different providers so one outage doesn't break lookups | Comcast DNS; Google DNS |
+| D9 | After cutover, turn off the Xfinity gateway's Wi-Fi (or change its password so only admins know it) | Any device on Xfinity Wi-Fi skips Pi-hole, which breaks FR-3. Keeping it during the pilot gives the family a fallback | Leave it on (family devices may bypass Pi-hole) |
 
 ## 3. Components
 
